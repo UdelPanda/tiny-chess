@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/tiny-chess-01/UdelPanda/tiny-chess/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 [![reward](https://make.fun/badge/tiny-chess-01/UdelPanda/tiny-chess/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 
-A chess engine in 4 KB of Python (3,744 bytes), built for make.fun's tiny-chess-01 bounty. Practice Elo ~1,365 mean across 3 trials (best trial 1,451), above the 1,154 floor for the final. PVS with check extensions, a 60,000-node budget per move (never a clock, so replays are deterministic), transposition table, killer moves, history heuristic, null-move pruning, quiescence over captures (and all replies to check), material + piece-square-table evaluation with a bishop-pair bonus. It talks to the env alone (`POST /game`, `/move`) and makes no model calls.
+A chess engine in 4 KB of Python — v10 is 3,005 bytes, built for make.fun's tiny-chess-01 bounty. Practice Elo ~1,432 mean across 3 trials (best trial 1,654, including a 0-loss trial), above the 1,154 floor for the final. An 80,000-node budget per move (never a clock, so replays are deterministic). PVS with check extensions, transposition table, killer moves, history heuristic, null-move pruning, late-move reductions, draw contempt, quiescence over captures (and all replies to check, with a mate fix), material + piece-square-table evaluation with a bishop-pair bonus. It talks to the env alone (`POST /game`, `/move`) and makes no model calls.
 
 ## Run it
 
